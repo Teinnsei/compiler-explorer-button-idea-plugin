@@ -1,0 +1,20 @@
+<idea-plugin>
+    <id>com.github.teinnsei.compiler_explorer</id>
+    <name><![CDATA[Compiler Explorer Button]]></name>
+    <vendor url="https://github.com/Teinnsei">Oleksandr Halahutskyi</vendor>
+    <description>_</description>
+    <change-notes>_</change-notes>
+    <version>_</version>
+    <idea-version />
+
+    <depends>com.intellij.modules.platform</depends>
+
+    <actions>
+        <action id="OpenCompilerExplorer"
+                class="com.github.teinnsei.plugin.explorer.OpenCompilerExplorerAction">
+            <add-to-group group-id="EditorPopupMenu" anchor="first"/>
+            <keyboard-shortcut keymap="$default" first-keystroke="shift meta alt R"/>
+        </action>
+    </actions>
+
+</idea-plugin>
